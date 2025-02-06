@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/097e064a27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />     
+</head>
+<body>
+    <section id="home" class="home">
+        <nav>
+            <img src="Images/Tumi Logo.png" class="logo" alt="Logo">
+            <ul id="sidemeun">
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <h1>Hi , I'm <span>Tumelo</span>. I'm a<br> Software Engineer</h1>
+        <p>I'm an innovative and motivated individual <br>that is Passionate Learner and to becoming <br>the best developer in the field of information <br>technology.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Tumi user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <div class="about-container">
+                    <p>I'm Tumelo Faith Rakgwahla. I recently Graduate with a bachelor degree in Information Technology (System Development) from Richfield Institute of Technology. 
+                       I have gained a strong foundation in a number of areas related to IT systems development over my academic career, 
+                       including databases management systems, software development and programming languages like C#, C++, PHP, HTML, CSS and Java.
+                    </p>
+                    </div>
+                    <div class="education-container">
+                    <i class="fa-solid fa-user-graduate" style='font-size:36px'></i>
+                    <h4>Education</h4>
+                    <p>Higher Certificate In Information Technology</p>
+                    <p>B.Sc Bachelors Degree In Informtion Technology(System Development)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+    <div class="project-container">
+
+        <div class="project">
+       
+        </div>
+
+        <div class="project">
+
+        </div>
+    </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <h4>Programming Languages:</h4>
+            <ul>
+                <li><i class="devicon-html5-plain-wordmark" style='font-size:36px'></i> HTML</li>
+                <li><i class="devicon-css3-plain-wordmark" style='font-size:36px'></i> CSS</li>
+                <li><i class="devicon-visualbasic-plain" style='font-size:36px'></i> VB.NET</li>
+                <li><i class="devicon-cplusplus-plain" style='font-size:36px'></i> C++</li>
+                <li><i class="devicon-php-plain" style='font-size:36px'></i> PHP</li>
+                <li><i class="devicon-csharp-plain" style='font-size:36px'></i> C#</li>
+                <li><i class="devicon-java-plain-wordmark" style='font-size:36px'></i> JAVA</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <p><i class="fa-regular fa-envelope" style='font-size:36px'></i> <a href="mailto:tumelorakgwahla@gmail.com">tumelorakgwahla@gmail.com</a></p>
+            <p><i class="fa-brands fa-linkedin" style='font-size:36px'></i> <a href="http://linkedin.com/in/tumelo-rakgwahla">LinkedIn</a></p>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 Tumelo Faith Rakgwahla. All Rights Reserved</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemeun");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-320px";
+        } 
+        
+        document.addEventListener("click", function(event) {
+        var sidemeu = document.getElementById("sidemeun");
+
+        // Check if the clicked element is not the open menu icon or the side menu itself
+        if (event.target.closest(".fa-bars") === null && event.target !== sidemeu) {
+        // Close the side menu
+        sidemeu.style.right = "-320px";
+        }
+});
+
+    </script>
+</body>
+</html>
