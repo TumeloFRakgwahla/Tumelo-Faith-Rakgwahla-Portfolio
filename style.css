@@ -163,32 +163,28 @@ nav ul li a:hover::after{
 }
 
 .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 420px;
     padding: 20px;
     margin: 20px 200px;
     border-radius: 15px;
     background-color: #333;
     text-align: center;
+    list-style: none;
 }
 
-.skill-container h4{
-    display:flex;
-    font-size: 30px;
+.skill-container li{
+    width: calc(100% / 7 - 10px); /* Ensures 7 items per row */
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.skill-container ul{
-    padding: 20px;
-    display: inline-block;
-    text-align: left;
-    list-style-type:none;
+.icon{
+    height: 50%;
+    width: 60%;
 }
-
-li{
-    padding: 5px 0;
-}
-
 .contact{
     padding: 100px 0;
 }
