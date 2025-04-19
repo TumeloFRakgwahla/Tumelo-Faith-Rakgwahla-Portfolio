@@ -150,12 +150,96 @@ nav ul li a:hover::after{
 
 .project{
     width: 50%;
-    height: 500px;
+    height: 730px;
     float: left;
     margin: 20px;
     border-radius: 15px;
     background-color: #333;
     flex-wrap: wrap;
+}
+
+.project h3 {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+.project .slideshow-container {
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .project .slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .caption {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    background: #222;
+    color: #fff;
+  }
+  
+ .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.layer {
+  padding: 15px;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.layer ul{
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+.projectbtn{
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 30px;
+}
+
+.projectbtn a{
+  background-color: #3c0781;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.projectbtn a:hover{
+   background-color: #a779e2;
 }
 
 .skills{

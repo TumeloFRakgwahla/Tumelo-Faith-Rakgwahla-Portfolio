@@ -56,11 +56,49 @@
         </div>
     </section>
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+    <h2>Projects</h2>
     <div class="project-container">
 
         <div class="project">
-       
+        <h3> Full Stack Online Voting System </h3>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="Images/Voting system Home page.png" alt="Online Voting System Home page">
+                <div class="caption">Voting System - Home Page</div>
+            </div>
+            
+            <div class="slide">
+                <img src="Images/Admin page.png" alt="Online Voting System Admin page">
+                <div class="caption">Voting System - Admin Page</div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="layer">
+            <p>
+            A secure and user-friendly Online Voting System.The system allows voters to register and cast 
+            their votes in a streamlined and intuitive interface, esuring one vote per user with built-in 
+            validation and vote tracking. <br>
+            </p>
+
+            <h4>Key Features :</h4>
+            <ul>
+                <li>Voter Registration and Login Authentication</li>
+                <li>One Voter, One Vote Restriction</li>
+                <li>Real-Time Vote Count and Result Display</li>
+                <li>Basic Security and Data Validation</li>
+                <li>Admin Panel for Managing Elections and Candidates</li>
+            </ul>
+
+            <h4>Languages Used :</h4>
+            <p>HTML, CSS, JAVASCRIPT, PHP AND MYSQL</p>
+        </div>
+        <div class="projectbtn">
+            <a href="#">Demo Online Voting System</a>
+            <a href="#">Demo Admin</a>
+            <a href="#">Source code</a>
+        </div>
         </div>
 
         <div class="project">
@@ -115,6 +153,24 @@
         }
 });
 
+let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? "block" : "none";
+    });
+  }
+
+  function changeSlide(n) {
+    currentSlide += n;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    showSlide(currentSlide);
+  }
+
+  // Initialize slideshow
+  showSlide(currentSlide);
     </script>
 </body>
 </html>
