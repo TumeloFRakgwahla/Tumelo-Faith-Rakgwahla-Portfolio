@@ -14,10 +14,10 @@
             <img src="Images/Tumi logo2.png" class="logo" alt="Logo">
             <ul id="sidemeun">
                 <li><a href="Portfolio.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="http://linkedin.com/in/tumelo-rakgwahla"><i class="devicon-linkedin-plain colored" style='font-size:35px'></i></a></li>
                 <li><a href="https://github.com/TumeloFRakgwahla"><i class="devicon-github-original" style='font-size:35px'></i></a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -26,9 +26,10 @@
         </nav>
         <div class="header-text">
         <h1>Hi , I'm <span>Tumelo Rakgwahla</span>. I'm a Software Engineer</h1>
-        <p>I'm an innovative and motivated individual that is 
-        Passionate Learner and to becoming the best developer 
-        in the field of information technology.</p>
+        <p>I'm an innovative and motivated individual, a 
+        passionate learner striving to become the 
+        best developer in the field of Information 
+        Technology.</p>
         </div>
     </section>
     <section id="about" class="about">
@@ -40,7 +41,7 @@
                 </div>
                 <div class="about-col-2">
                     <div class="about-container">
-                    <p>I'm Tumelo Faith Rakgwahla. I recently Graduate with a bachelor degree in Information Technology (System Development) from Richfield Institute of Technology. 
+                    <p>I'm Tumelo Faith Rakgwahla. I recently graduated with a Bachelor's Degree in Information Technology (System Development) from Richfield Institute of Technology. 
                        I have gained a strong foundation in a number of areas related to IT systems development over my academic career, 
                        including databases management systems, software development and programming languages like C#, C++, PHP, HTML, CSS and Java.
                     </p>
@@ -109,15 +110,15 @@
     <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul class="skill-container">
-           <li><img src="Images/Icons/html-5.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/css-3.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/icons8-visual-basic-48.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/c-.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/php.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/c-sharp.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/java.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/sql-server.png" alt="" class="icon"></li>
-           <li><img src="Images/Icons/oracle.png" alt="" class="icon"></li>
+           <li><img src="Images/Icons/html-5.png" alt="HTML5" class="icon"></li>
+           <li><img src="Images/Icons/css-3.png" alt="CSS" class="icon"></li>
+           <li><img src="Images/Icons/icons8-visual-basic-48.png" alt="VB.NET" class="icon"></li>
+           <li><img src="Images/Icons/c-.png" alt="C-" class="icon"></li>
+           <li><img src="Images/Icons/php.png" alt="PHP" class="icon"></li>
+           <li><img src="Images/Icons/c-sharp.png" alt="C#" class="icon"></li>
+           <li><img src="Images/Icons/java.png" alt="JAVA" class="icon"></li>
+           <li><img src="Images/Icons/sql-server.png" alt="SQL" class="icon"></li>
+           <li><img src="Images/Icons/oracle.png" alt="ORACLE" class="icon"></li>
         </ul>
     </section>
     <section id="contact" class="contact">
@@ -131,46 +132,5 @@
         <p>Copyright &copy; 2024 Tumelo Faith Rakgwahla. All Rights Reserved</p>
     </footer>
     <script src="scripts.js"></script>
-    <script>
-
-        var sidemeu = document.getElementById("sidemeun");
-
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-
-        function closemenu(){
-            sidemeu.style.right = "-320px";
-        } 
-        
-        document.addEventListener("click", function(event) {
-        var sidemeu = document.getElementById("sidemeun");
-
-        // Check if the clicked element is not the open menu icon or the side menu itself
-        if (event.target.closest(".fa-bars") === null && event.target !== sidemeu) {
-        // Close the side menu
-        sidemeu.style.right = "-320px";
-        }
-});
-
-let currentSlide = 0;
-  const slides = document.querySelectorAll(".slide");
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.style.display = i === index ? "block" : "none";
-    });
-  }
-
-  function changeSlide(n) {
-    currentSlide += n;
-    if (currentSlide >= slides.length) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = slides.length - 1;
-    showSlide(currentSlide);
-  }
-
-  // Initialize slideshow
-  showSlide(currentSlide);
-    </script>
 </body>
 </html>
