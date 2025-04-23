@@ -1,6 +1,4 @@
- // Contact form message
 document.addEventListener('DOMContentLoaded', function () {
-
 
 // Side menu toggle
 var sidemeu = document.getElementById("sidemeun");
