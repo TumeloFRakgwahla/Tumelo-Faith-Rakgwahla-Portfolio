@@ -1,12 +1,6 @@
  // Contact form message
 document.addEventListener('DOMContentLoaded', function () {
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Thank you for your message!');
-    });
-}
+
 
 // Side menu toggle
 var sidemeu = document.getElementById("sidemeun");
