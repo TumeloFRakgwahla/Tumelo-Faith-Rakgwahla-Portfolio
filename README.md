@@ -77,9 +77,9 @@ portfolio-website/
 
 ## 📫 Contact
 
-📧 Email: tumelorakgwahla@gmail.com
-🔗 LinkedIn: linkedin.com/in/tumelo-rakgwahla
-💻 GitHub: github.com/TumeloFRakgwahla
+- 📧 Email: tumelorakgwahla@gmail.com
+- 🔗 LinkedIn: linkedin.com/in/tumelo-rakgwahla
+- 💻 GitHub: github.com/TumeloFRakgwahla
 
 ## 📃 License
 
