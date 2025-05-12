@@ -134,7 +134,7 @@ nav ul li a:hover::after{
 }
 
 .projects{
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .projects h2{
@@ -146,16 +146,20 @@ nav ul li a:hover::after{
 
 .project-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project{
-    width: 50%;
-    height: 730px;
-    float: left;
-    margin: 20px;
+    width: 45%;
+    height: auto;
+    margin: 20px 0;
     border-radius: 15px;
     background-color: #333;
-    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-basis: 48%;
+    flex: grow 1;
 }
 
 .project h3 {
@@ -223,8 +227,10 @@ nav ul li a:hover::after{
 }
 
 .projectbtn{
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 0px 30px;
 }
 
@@ -235,7 +241,9 @@ nav ul li a:hover::after{
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
-  display: inline-block; 
+  flex: 1;
+  min-width: 130px;
+  text-wrap: balance; 
 }
 
 .projectbtn a:hover{
@@ -267,7 +275,7 @@ nav ul li a:hover::after{
 }
 
 .skill-container li{
-    width: calc(100% / 7 - 10px); /* Ensures 7 items per row */
+    width: calc(100% / 7 - 10px); 
     display: flex;
     justify-content: center;
 }
@@ -333,7 +341,6 @@ nav .fa-solid{
     }
 
     .header-text{
-        margin-top: 50%;
         font-size: 16px;
     }
 
@@ -351,8 +358,8 @@ nav .fa-solid{
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
-        height: 60vh;
+        width: 300px;
+        height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -388,7 +395,13 @@ nav .fa-solid{
         width: 100%;
         height: 100%;
         border-radius: 40px;
-        padding: 20px;
+    }
+
+    .education-container{
+        width: 100%;
+        padding: 20px 0px;
+        margin: 0px;
+        
     }
 
     .education-container h4{
@@ -404,13 +417,12 @@ nav .fa-solid{
 
     .project-container{
         display: inline-block;
-        width: 100%; 
         align-items: center;
     }
 
     .project{
-        width: 90%;
-        height: 300px;
+        width: 100%;
+        height: auto;
         border-radius: 15px;
         flex-wrap: wrap;
     }
@@ -449,35 +461,19 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 768px) {
-    .project-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .project {
-      width: 90%;
-      height: auto;
-    }
-
-    .skill-container li {
-        width: 25%;
-        margin: 10px 0;
-      }
-  }
-
-@media screen and (max-width: 1200px){
     nav .fa-solid{
         display: block;
         font-size: 25px;
     }
 
     nav ul{
+        justify-items: center;
         background-color: #3c0781;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
-        height: 60vh;
+        width: 300px;
+        height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -494,6 +490,56 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+
+    .project-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project {
+      width: 100%;
+      height: auto;
+    }
+
+    .projectbtn {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .projectbtn a {
+        width: 100%; 
+        text-align: center;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .skill-container li {
+        width: 25%;
+        margin: 10px 0;
+      }
+  }
+
+@media screen and (max-width: 1200px){
+
+    .projectbtn{
+        justify-content: space-between;
+        display: flex;
+        padding: 0px 30px;
+    }
+
+    .projectbtn a{
+        background-color: #3c0781;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block; 
+      }
+      
+      .projectbtn a:hover{
+         background-color: #a779e2;
+      }
 
     .skill-container{
         height: 450px;
