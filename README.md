@@ -56,3 +56,31 @@ This portfolio highlights my academic journey, skill set, and development projec
 ---
 
 ## ▶️ How to Run
+
+## 📁 Folder Structure
+
+portfolio-website/
+├── Images/
+│   ├── Tumi logo2.png
+│   ├── Tumi user.png
+│   ├── Voting system Home page.png
+│   ├── Admin page.png
+│   └── Icons/
+│       ├── html-5.png
+│       ├── css-3.png
+│       └── ... etc.
+├── style.css
+├── scripts.js
+├── Portfolio.html
+└── README.md
+
+
+## 📫 Contact
+
+📧 Email: tumelorakgwahla@gmail.com
+🔗 LinkedIn: linkedin.com/in/tumelo-rakgwahla
+💻 GitHub: github.com/TumeloFRakgwahla
+
+## 📃 License
+
+This project is licensed for personal and educational use. Reach out if you'd like to collaborate or reuse parts of it professionally.
