@@ -46,9 +46,6 @@ This portfolio highlights my academic journey, skill set, and development projec
 - **Devicon** (technology icons)
 
 ---
-
-## ▶️ How to Run
----
 ## 📁 Folder Structure
 ```bash
 portfolio-website/
