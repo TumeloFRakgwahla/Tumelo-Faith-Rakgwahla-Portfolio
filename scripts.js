@@ -17,22 +17,40 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// Slideshow logic
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+// Object to store the current index for each slideshow container
+const slideIndices = {};
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.display = i === index ? "block" : "none";
-    });
+function showSlide(containerId, index) {
+  const container = document.getElementById(containerId);
+  const slides = container.querySelectorAll(".slide");
+
+  // Ensure index wraps correctly
+  if (index >= slides.length) index = 0;
+  if (index < 0) index = slides.length - 1;
+
+  // Store the current index
+  slideIndices[containerId] = index;
+
+  // Show only the current slide
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? "block" : "none";
+  });
 }
 
-window.changeSlide = function(n) {
-    currentSlide += n;
-    if (currentSlide >= slides.length) currentSlide = 0;
-    if (currentSlide < 0) currentSlide = slides.length - 1;
-    showSlide(currentSlide);
+// This function will be triggered by arrows
+window.changeSlide = function(n, containerId) {
+  const current = slideIndices[containerId] ?? 0;
+  showSlide(containerId, current + n);
 }
+
+// Initialize all slideshows on page load
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".slideshow-container").forEach(container => {
+    const id = container.id;
+    slideIndices[id] = 0;
+    showSlide(id, 0);
+  });
+});
 
 // Initialize slideshow
 if (slides.length > 0) {
