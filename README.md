@@ -60,7 +60,7 @@ This portfolio highlights my academic journey, skill set, and development projec
 ## 📁 Folder Structure
 
 portfolio-website/
-├── Images/
+(├── Images/)
 │   ├── Tumi logo2.png
 │   ├── Tumi user.png
 │   ├── Voting system Home page.png
