@@ -41,7 +41,7 @@ This portfolio highlights my academic journey, skill set, and development projec
 
 | Home Section | About Section | Project Preview |
 |--------------|---------------|-----------------|
-| ![Home](Images/Voting%20system%20Home%20page.png) | ![About](Images/Tumi%20user.png) | ![Admin](Images/Admin%20page.png) |
+| ![Home]() | ![About](Images/Tumi%20user.png) | ![Admin]() |
 
 ---
 
