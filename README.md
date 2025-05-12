@@ -58,9 +58,9 @@ This portfolio highlights my academic journey, skill set, and development projec
 ## ▶️ How to Run
 
 ## 📁 Folder Structure
-
+```bash
 portfolio-website/
-(├── Images/)
+├── Images/
 │   ├── Tumi logo2.png
 │   ├── Tumi user.png
 │   ├── Voting system Home page.png
@@ -73,7 +73,7 @@ portfolio-website/
 ├── scripts.js
 ├── Portfolio.html
 └── README.md
-
+```
 
 ## 📫 Contact
 
