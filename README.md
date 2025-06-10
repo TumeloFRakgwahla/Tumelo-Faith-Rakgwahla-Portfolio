@@ -12,7 +12,6 @@ Welcome to my personal portfolio website! This site showcases who I am, what Iâ€
 
 - [About the Project](#about-the-project)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Folder Structure](#folder-structure)
 - [Contact](#contact)
