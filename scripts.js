@@ -5,15 +5,18 @@ var sidemeu = document.getElementById("sidemeun");
 
 window.openmenu = function () {
     sidemeu.style.right = "0";
+    document.body.style.overflow = "hidden";
 }
 
 window.closemenu = function () {
     sidemeu.style.right = "-320px";
+    document.body.style.overflow ="auto";
 }
 
 document.addEventListener("click", function(event) {
     if (event.target.closest(".fa-bars") === null && event.target !== sidemeu) {
         sidemeu.style.right = "-320px";
+        document.body.style.overflow ="auto";
     }
 });
 
@@ -52,8 +55,4 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Initialize slideshow
-if (slides.length > 0) {
-    showSlide(currentSlide);
-}
 });
