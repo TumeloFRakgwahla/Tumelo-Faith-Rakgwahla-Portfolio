@@ -364,7 +364,8 @@ footer {
   }
 
   nav ul li {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 25px;
   }
 
@@ -427,7 +428,7 @@ footer {
   }
 
   .about-col-1 img {
-    border-radius: 40px;
+    border-radius: 20px;
   }
 
   .education-container {
