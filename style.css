@@ -352,7 +352,7 @@ footer {
   }
 
   nav ul {
-    background: var(--primary-color);
+    background: var(--bg-nav);
     position: fixed;
     top: 0;
     right: -300px;
