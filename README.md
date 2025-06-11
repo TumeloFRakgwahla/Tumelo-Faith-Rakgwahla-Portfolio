@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This site showcases who I am, what I�
 
 ## 🌐 Live Preview
 
-> Coming Soon – Link to the deployed website will be added here.
+> https://tumelofrakgwahla.github.io/Tumelo-Faith-Rakgwahla-Portfolio/
 
 ---
 
